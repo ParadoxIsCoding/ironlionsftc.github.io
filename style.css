@@ -1,8 +1,15 @@
+:root {
+    --primary: #1d2066;
+    --accent: #212475;
+    --background: #191b4f;
+    --text: #FFFFFF;
+}
+
 .header {
     margin-top: 0px;
     padding-top: 0px;
     border-top: 0px;
-    background-color: #271f59;
+    background-color: var(--primary);
     height: 80px;
     width: 100%;
     position: fixed;
@@ -14,7 +21,7 @@ body {
     padding-top: 0px;
     margin-top: 90px;
     border-top: 0px;
-    background-color: #100030;
+    background-color: var(--background);
 }
 
 .tile_img {
@@ -22,25 +29,51 @@ body {
     margin-right: 20px;
 }
 
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
 .after_image {
     flex: 1;
 }
 
-.text_block {
+.image_and_text_container {
     display: flex;
     align-items: center;
-    background-color: #1d1742;
+    background-color: var(--primary);
     width: 80%;
     border-style: solid;
     border-width: 20px;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 10px;
-    border-color: #1d1742;
+    border-color: var(--primary);
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     padding: 20px;
+}
+
+.text_column {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    background-color: var(--accent);
+    color: white;
+    font-size: 40px;
+    border-color: var(--accent);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 60px;
+    padding: 30px;
+    border-radius: 25px;
+    hyphens: auto;
+}
+
+img {
+    border-radius: 25px;
 }
 
 @keyframes rainbow {
@@ -52,7 +85,14 @@ body {
     }
 }
 
-.rainbow-text {
+.paragraph_heading {
+    margin: 20px;
+    display: flex;
+    font-size: 50px;
+    color: white;
+}
+
+.rainbow_text {
     background: linear-gradient(90deg, #FF0000, #FFA500, #FFFF00, #008000, #00FFFF, #0000FF, #800080, #FF0000);
     background-size: 50% 100%;
     -webkit-background-clip: text;
@@ -63,14 +103,14 @@ body {
 }
 
 .header_button {
-    background-color: #271f59;
+    background-color: var(--primary);
     border-width: 0;
-    color: #ffffff;
+    color: var(--text);
     font-size: 50px;
     height: 80px;
     margin-left: 50px;
 }
 
 .header_button:hover {
-    background-color: #100030;
+    background-color: var(--accent);
 }
