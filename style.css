@@ -1,4 +1,4 @@
-.banner {
+.header {
     margin-top: 0px;
     padding-top: 0px;
     border-top: 0px;
@@ -10,13 +10,9 @@
     left: 0;
 }
 
-head, body { 
-    margin: 0px !important;
-}
-
 body {
     padding-top: 0px;
-    margin-top: 0px;
+    margin-top: 90px;
     border-top: 0px;
     background-color: #100030;
 }
@@ -37,6 +33,8 @@ body {
     width: 80%;
     border-style: solid;
     border-width: 20px;
+    color: white;
+    font-size: 50px;
     border-radius: 10px;
     border-color: #1d1742;
     margin-left: auto;
@@ -62,4 +60,17 @@ body {
     animation: rainbow 10s linear infinite;
     font-size: 48px;
     text-align: center;
+}
+
+.header_button {
+    background-color: #271f59;
+    border-width: 0;
+    color: #ffffff;
+    font-size: 50px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.header_button:hover {
+    background-color: #100030;
 }
