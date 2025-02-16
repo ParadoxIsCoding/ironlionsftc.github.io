@@ -75,6 +75,12 @@
     text-align: justify;
   }
   
+  .section_heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
   img {
     max-width: 100%;
     border-radius: 10px;
