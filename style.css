@@ -6,6 +6,14 @@
     --font-family: 'Roboto', sans-serif;
   }
   
+  .dark-mode {
+    /* Override colours for dark mode */
+    --primary: #000000;
+    --accent: #333333;
+    --background: #000000;
+    --text: #ffffff;
+  }
+  
   * {
     box-sizing: border-box;
     margin: 0;
@@ -85,6 +93,28 @@
     max-width: 100%;
     border-radius: 10px;
     margin: 10px 0;
+  }
+  
+  /* Toggle Button Styles */
+  #toggle-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  #dark-mode-toggle {
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #dark-mode-toggle:hover {
+    background-color: var(--accent);
   }
   
   /* Responsive design for larger screens */

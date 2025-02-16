@@ -115,5 +115,14 @@
         </div>
       </div>
     </div>
+    <div id="toggle-container">
+      <button id="dark-mode-toggle">☀︎</button>
+    </div>
+    <script>
+      const toggleButton = document.getElementById('dark-mode-toggle');
+      toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
   </body>
 </html>
